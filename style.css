@@ -1,0 +1,110 @@
+:root {
+    --primary: #4a90e2;
+    --income: #2ecc71;
+    --expense: #e74c3c;
+    --bg: #f4f7f6;
+    --text: #333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.summary-container { display: flex; gap: 15px; margin-bottom: 25px; }
+
+.card {
+    flex: 1;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    border-bottom: 4px solid var(--primary);
+}
+
+.settings {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.settings input { flex: 1; padding: 8px; }
+
+#transaction-form {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+#transaction-list { list-style: none; }
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.income-border { border-left: 5px solid var(--income); }
+.expense-border { border-left: 5px solid var(--expense); }
+
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background: #333;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.notification.hide { transform: translateY(100px); }
