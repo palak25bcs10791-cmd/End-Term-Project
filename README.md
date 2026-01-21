@@ -1,4 +1,4 @@
-# SpendWise | Vanilla JS Finance Tracker
+# SpendWise | Finance Tracker
 
 ## 📌 Project Overview
 SpendWise is a high-performance, interactive personal finance dashboard built entirely with **Vanilla JavaScript**. It allows users to track their income and expenses, visualize their progress toward a savings goal, and manage their financial data through a clean, modern interface.
@@ -47,4 +47,5 @@ To meet the "Depth of DOM Manipulation" requirement, this project utilizes:
 ## 🚀 Steps to Run the Project
 1. Clone the repository:
    ```bash
-   git clone [INSERT_YOUR_GITHUB_LINK_HERE]
+
+   git clone [https://github.com/palak25bcs10791-cmd/End-Term-Project]
